@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 if (!isset($_SESSION['administrador'])) header('location:../index.html');
 include('../../php/conexion.php');
@@ -70,7 +70,6 @@ $registros1=mysqli_query($conexion,"select * from clientes WHERE validado='1' or
 	</ul>
     </li>
 	<li class="topmenu"><a class="pressed" href="#" style="width:157px;height:55px;line-height:55px;"><span style="margin-top:-15px">Clientes</span></a></li>
-	<li class="topmenu"><a href="../chat" style="width:158px;height:55px;line-height:55px;"><span style="margin-top:-15px">Chat</span></a></li>
     <li class="topmenu"><a href="../comentarios/mostrar_comentarios.php" style="width:190px;height:55px;line-height:55px;"><span style="margin-top:-15px">Comentarios</span></a></li>
 </ul>
 <!-- End css3menu.com BODY section -->

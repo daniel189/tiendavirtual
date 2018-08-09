@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 include('../../php/conexion.php');
 include("funciones_productos.php");
@@ -143,7 +143,6 @@ function interruptor(){
 	</ul>
     </li>
 	<li class="topmenu"><a href="../clientes/" style="width:157px;height:55px;line-height:55px;"><span style="margin-top:-15px">Clientes</span></a></li>
-	<li class="topmenu"><a href="../chat" style="width:158px;height:55px;line-height:55px;"><span style="margin-top:-15px">Chat</span></a></li>
     <li class="topmenu"><a href="../comentarios/mostrar_comentarios.php" style="width:190px;height:55px;line-height:55px;"><span style="margin-top:-15px">Comentarios</span></a></li>
 </ul>
 <!-- End css3menu.com BODY section -->
