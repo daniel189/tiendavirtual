@@ -99,24 +99,9 @@ function validarformulario(){
 
 			success:function(resp){
 
-				if(resp=="exito"){
-
 					$("#carga").hide("fast");
 					$("#emailrepetido").hide("fast");
 					$("#exito").show("slow");
-
-
-				}
-
-				if(resp=="emailrepetido"){
-
-					$("#carga").hide("fast");
-					$("#exito").hide("fast");
-					$("#emailrepetido").show("slow");
-
-				}
-
-
 
 			}
 
