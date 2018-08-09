@@ -83,7 +83,7 @@ if(isset($_SESSION['mi_carrito']) && !empty($_SESSION['mi_carrito'])){
 	}
 	if(isset($_SESSION["envio"])){
 ?>
-		<tr class="success"><td>Envío</td><td>3</td><td>1</td></tr>
+		<tr class="success"><td>Envío</td><td>2.48</td><td>1</td></tr>
 <?php
 	}
 	if(isset($_SESSION["pago"])){
@@ -96,13 +96,13 @@ if(isset($_SESSION['mi_carrito']) && !empty($_SESSION['mi_carrito'])){
      </table>
 <?php
 
-	echo "".$_SESSION['total']." $ (Sin IVA)</br>";
+	echo "".$_SESSION['total']." Dolares (Sin IVA)</br>";
 	echo "--------------------------------------------</br>";
 	echo "+ 12% de IVA</br>";
 	echo "--------------------------------------------</br>";
-	$_SESSION['total_iva']=$_SESSION['total']-(($_SESSION['total'])/1.12);
-	$_SESSION['total_iva']=$_SESSION['total']+round($_SESSION['total_iva'] * 100)/100;
-	echo "Total: ".$_SESSION['total_iva']." $";
+	$_SESSION['total_iva']=(($_SESSION['total']*12)/100)+$_SESSION['total'];
+	$_SESSION['total_iva']=round($_SESSION['total_iva'] * 100)/100;
+	echo "Total: ".$_SESSION['total_iva']." Dolares";
 ?>
 	<div style="margin-top:10px; margin-bottom:10px">
     <a href="compra/proceso_compra/proceso_compra.php">

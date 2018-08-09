@@ -92,7 +92,7 @@ if (isset($_GET['success']) && $_GET['success'] == 'true') {
 	/*
     ResultPrinter::printResult("Get Payment", "Payment", $payment->getId(), null, $payment);
 	*/
-	header("location: http://localhost/tienda/compra/proceso_compra/crear_pedido.php");
+	header("location: http://localhost/compra/proceso_compra/crear_pedido.php");
     return $payment;
 } else {
     // NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY

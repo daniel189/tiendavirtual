@@ -32,6 +32,7 @@ ini_set('display_errors', '1');
 // Replace these values by entering your own ClientId and Secret by visiting https://developer.paypal.com/developer/applications/
 $clientId = 'Abh1_RFo3yYF-OLswcoy0rQ-scDzmYu864Vwfp-Xt_tR5nC2c3u6Sm2XJCgwf1Cr22cw5RGuYLJ1E1db';
 $clientSecret = 'ECKhuNHb-qXgnlte4SO56W8MrQnHIJfn7ikH_96eZ3NL3_woXKWhiXSKU5b5epnB3xzx6ILLDF2MFfvf';
+
 /**
  * All default curl options are stored in the array inside the PayPalHttpConfig class. To make changes to those settings
  * for your specific environments, feel free to add them using the code shown below

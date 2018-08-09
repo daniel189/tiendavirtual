@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 
 // # Authorize Payment using PayPal as payment method
@@ -59,7 +59,7 @@ if(isset($_SESSION["envio"])){
 		$item->setName('Envío')
     	->setCurrency('USD')
     	->setQuantity(1)
-    	->setPrice(3);
+    	->setPrice(2.48);
 		$items[] = $item;
 
 }
@@ -68,7 +68,7 @@ $item = new Item();
 	$item->setName('IVA (12 %)')
     ->setCurrency('USD')
     ->setQuantity(1)
-    ->setPrice(($_SESSION['total']*21)/100);
+    ->setPrice(($_SESSION['total']*12)/100);
 	$items[] = $item;
 
 $itemList = new ItemList();
@@ -108,10 +108,10 @@ $transaction->setAmount($amount)
 // ### Redirect urls
 // Set the urls that the buyer must be redirected to after
 // payment approval/ cancellation.
-$basUSDl = getBasUSDl();
+$baseUrl = getBaseUrl();
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl("$basUSDl/ExecutePayment.php?success=true")
-    ->setCancelUrl("http://localhost/tienda/compra/proceso_compra/cancelar_pedido.php?success=false");
+$redirectUrls->setReturnUrl("$baseUrl/ExecutePayment.php?success=true")
+    ->setCancelUrl("http://localhost/tiendamega/tiendavirtual/compra/proceso_compra/cancelar_pedido.php?success=false");
 
 // ### Payment
 // A Payment Resource; create one using

@@ -103,8 +103,8 @@ box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);padding:12px">
 		<div style="min-height:380px">
         	<p style="font-size:18px; font-weight:bold; color:#F30; margin-left:10px">FORMA DE ENVÍO</p>
         	<table style=" font-size:20px" class="table table-bordered">
-            	<tr><td><input onClick="restar_envio()" id="envio1" type="radio" name="envio"></td><td>Recoger en tienda (Se retira el precio del envio)</td></tr>
-                <tr><td><input onClick="sumar_envio()" id="envio2" type="radio" name="envio" ></td><td>Envío </td></tr>
+            	<tr><td><input onClick="restar_envio()" id="envio1" type="radio" name="envio"></td><td>Recoger en tienda (Gratis)</td></tr>
+                <tr><td><input onClick="sumar_envio()" id="envio2" type="radio" name="envio" ></td><td>Envío (3 Dolares +)</td></tr>
             </table>
         </div>
         <div>
@@ -122,7 +122,8 @@ box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);padding:15px">
         	<p style="font-size:18px; font-weight:bold; color:#F30; margin-left:10px">FORMA DE PAGO</p>
         	<table style=" font-size:20px" class="table table-bordered">
             	<tr><td><input onClick="forma_pago('Efectivo')" id="pago1" type="radio" name="formapago"></td><td>Efectivo (Solo aplicable si ha escogido recogida en tienda)</td></tr>
-
+                <tr><td><input onClick="forma_pago('Transferencia')" onMouseOver="datos_transferencia()" id="pago2" type="radio" name="formapago"></td><td>Transferencia Bancaria <div id="transferencia" style="margin-top:10px; font-size:13px; display:none" class="alert alert-warning" role="alert">Poner lo que quieras...</div></td></tr>
+                <tr><td><input onClick="forma_pago('Contrareembolso')" id="pago4" type="radio" name="formapago"></td><td>Pago Contrareembolso</td></tr>
                 <tr><td><input onClick="forma_pago('Paypal')" id="pago3" type="radio" name="formapago"></td><td><img src="paypal.jpg" width="80px"></td></tr>
             </table>
         </div>
@@ -157,7 +158,7 @@ box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);padding:15px">
 
 
 <footer style="margin-top:-10px" class="wow bounceInDown" data-wow-duration="1.5s">
-	<p>Todos los derechos reservados Daniel Ortega Henry Suntaxi David Palacios</p>
+	<p>Todos los derechos reservados tiendaonline.com</p>
 </footer>
 
 
